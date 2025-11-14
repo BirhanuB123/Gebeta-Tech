@@ -149,7 +149,7 @@ const Chatbot = () => {
         whileTap={{ scale: 0.9 }}
       >
         <img 
-          src="https://cdn-icons-png.flaticon.com/512/8943/8943377.png" 
+          src="/chatbot.png" 
           alt="Chatbot" 
           className="chatbot-icon-image"
         />
@@ -170,7 +170,7 @@ const Chatbot = () => {
             <div className="chatbot-header">
               <div className="chatbot-header-info">
                 <img 
-                  src="https://cdn-icons-png.flaticon.com/512/8943/8943377.png" 
+                  src="/chatbot.png" 
                   alt="AI Assistant" 
                   className="chatbot-header-icon chatbot-header-image"
                 />
@@ -200,7 +200,7 @@ const Chatbot = () => {
                   <div className="message-avatar">
                     {message.isBot ? (
                       <img 
-                        src="https://cdn-icons-png.flaticon.com/512/8943/8943377.png" 
+                        src="/chatbot.png" 
                         alt="AI" 
                         className="avatar-image"
                       />
@@ -228,7 +228,7 @@ const Chatbot = () => {
                 >
                   <div className="message-avatar">
                     <img 
-                      src="https://cdn-icons-png.flaticon.com/512/8943/8943377.png" 
+                      src="/chatbot.png" 
                       alt="AI" 
                       className="avatar-image"
                     />
