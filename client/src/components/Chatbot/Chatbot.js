@@ -148,7 +148,11 @@ const Chatbot = () => {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >
-        <FaComments />
+        <img 
+          src="https://cdn-icons-png.flaticon.com/512/8943/8943377.png" 
+          alt="Chatbot" 
+          className="chatbot-icon-image"
+        />
         <span className="chatbot-badge">AI</span>
       </motion.button>
 
@@ -165,7 +169,11 @@ const Chatbot = () => {
             {/* Header */}
             <div className="chatbot-header">
               <div className="chatbot-header-info">
-                <FaRobot className="chatbot-header-icon" />
+                <img 
+                  src="https://cdn-icons-png.flaticon.com/512/8943/8943377.png" 
+                  alt="AI Assistant" 
+                  className="chatbot-header-icon chatbot-header-image"
+                />
                 <div>
                   <h3>Gebeta Tech AI</h3>
                   <p>Online • Ready to help</p>
@@ -190,7 +198,15 @@ const Chatbot = () => {
                   transition={{ duration: 0.3 }}
                 >
                   <div className="message-avatar">
-                    {message.isBot ? <FaRobot /> : <FaUser />}
+                    {message.isBot ? (
+                      <img 
+                        src="https://cdn-icons-png.flaticon.com/512/8943/8943377.png" 
+                        alt="AI" 
+                        className="avatar-image"
+                      />
+                    ) : (
+                      <FaUser />
+                    )}
                   </div>
                   <div className="message-content">
                     <p style={{ whiteSpace: 'pre-line' }}>{message.text}</p>
@@ -211,7 +227,11 @@ const Chatbot = () => {
                   animate={{ opacity: 1 }}
                 >
                   <div className="message-avatar">
-                    <FaRobot />
+                    <img 
+                      src="https://cdn-icons-png.flaticon.com/512/8943/8943377.png" 
+                      alt="AI" 
+                      className="avatar-image"
+                    />
                   </div>
                   <div className="typing-indicator">
                     <span></span>
