@@ -1,0 +1,26 @@
+const mongoose = require('mongoose');
+
+const NewsletterSchema = new mongoose.Schema({
+  email: {
+    type: String,
+    required: [true, 'Please provide your email'],
+    trim: true,
+    lowercase: true,
+    unique: true,
+    match: [
+      /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+      'Please provide a valid email'
+    ]
+  },
+  subscribedAt: {
+    type: Date,
+    default: Date.now
+  },
+  isActive: {
+    type: Boolean,
+    default: true
+  }
+});
+
+module.exports = mongoose.model('Newsletter', NewsletterSchema);
+

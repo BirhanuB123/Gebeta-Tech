@@ -1,0 +1,30 @@
+{
+  "name": "gebeta-tech-website",
+  "version": "1.0.0",
+  "description": "Professional technology company website - MERN Stack",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix client",
+    "build": "npm run build --prefix client",
+    "install-all": "npm install && cd client && npm install"
+  },
+  "keywords": ["mern", "tech-company", "website"],
+  "author": "Gebeta Tech",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "body-parser": "^1.20.2",
+    "nodemailer": "^6.9.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "concurrently": "^8.2.1"
+  }
+}
+
