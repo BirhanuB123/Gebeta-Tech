@@ -1,0 +1,179 @@
+.about {
+  background: 
+    linear-gradient(180deg, rgba(243, 244, 246, 0.96) 0%, rgba(255, 255, 255, 0.96) 100%),
+    url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1920&h=1080&fit=crop&q=80') center/cover no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.about-text h3 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: var(--text-dark);
+}
+
+.about-text p {
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+}
+
+.about-text p strong {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.achievements-list {
+  margin-top: 40px;
+  padding: 30px;
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.05) 0%, rgba(251, 146, 60, 0.05) 100%);
+  border-radius: 15px;
+  border-left: 4px solid var(--primary-color);
+}
+
+.achievements-list h4 {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  color: var(--text-dark);
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.achievement-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+.achievement-item svg {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.about-values h3 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: var(--text-dark);
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.value-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.value-card:hover {
+  box-shadow: 0 10px 40px rgba(249, 115, 22, 0.15);
+  border-color: rgba(249, 115, 22, 0.2);
+}
+
+.value-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.1) 0%, rgba(251, 146, 60, 0.1) 100%);
+  border-radius: 12px;
+  margin-bottom: 20px;
+  font-size: 1.75rem;
+  color: var(--primary-color);
+}
+
+.value-card h4 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: var(--text-dark);
+}
+
+.value-card p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.about-cta {
+  background: var(--gradient-2);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+}
+
+.about-cta h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.about-cta p {
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+.about-cta .btn {
+  background: white;
+  color: var(--primary-color);
+}
+
+.about-cta .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-text h3,
+  .about-values h3 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .achievements-list {
+    padding: 20px;
+  }
+
+  .about-cta {
+    padding: 30px 20px;
+  }
+
+  .about-cta h4 {
+    font-size: 1.25rem;
+  }
+}
+
