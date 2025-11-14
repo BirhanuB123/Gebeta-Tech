@@ -23,6 +23,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 40px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-left: auto;
 }
 
 .navbar-logo {
@@ -174,8 +182,23 @@
   transform: scale(1.1);
 }
 
+/* Tablet and Medium Screens */
+@media (max-width: 1200px) {
+  .navbar-menu {
+    gap: 30px;
+  }
+
+  .navbar-right {
+    gap: 30px;
+  }
+}
+
 /* Mobile Responsive */
 @media (max-width: 968px) {
+  .navbar-right {
+    gap: 20px;
+  }
+
   .navbar-menu {
     position: fixed;
     top: 76px;

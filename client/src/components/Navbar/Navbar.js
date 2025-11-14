@@ -33,25 +33,27 @@ const Navbar = () => {
     >
       <div className="container">
         <div className="navbar-content">
-          <div className="navbar-logo">
+          <div className="navbar-logo" onClick={() => scrollToSection('hero')}>
             <img src="/logo.png" alt="Gebeta Tech" className="logo-image" />
             <h2>Gebeta<span>Tech</span></h2>
           </div>
 
-          <ul className={`navbar-menu ${isMobileMenuOpen ? 'active' : ''}`}>
-            <li><a onClick={() => scrollToSection('hero')}>Home</a></li>
-            <li><a onClick={() => scrollToSection('services')}>Services</a></li>
-            <li><a onClick={() => scrollToSection('about')}>About</a></li>
-            <li><a onClick={() => scrollToSection('portfolio')}>Portfolio</a></li>
-            <li><a onClick={() => scrollToSection('contact')}>Contact</a></li>
-          </ul>
+          <div className="navbar-right">
+            <ul className={`navbar-menu ${isMobileMenuOpen ? 'active' : ''}`}>
+              <li><a onClick={() => scrollToSection('hero')}>Home</a></li>
+              <li><a onClick={() => scrollToSection('services')}>Services</a></li>
+              <li><a onClick={() => scrollToSection('about')}>About</a></li>
+              <li><a onClick={() => scrollToSection('portfolio')}>Portfolio</a></li>
+              <li><a onClick={() => scrollToSection('contact')}>Contact</a></li>
+            </ul>
 
-          <button 
-            className="btn btn-primary navbar-cta"
-            onClick={() => scrollToSection('contact')}
-          >
-            Get Started
-          </button>
+            <button 
+              className="btn btn-primary navbar-cta"
+              onClick={() => scrollToSection('contact')}
+            >
+              Get Started
+            </button>
+          </div>
 
           <div 
             className="mobile-menu-icon"
