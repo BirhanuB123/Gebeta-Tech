@@ -1,8 +1,21 @@
 .portfolio {
   background: 
-    linear-gradient(180deg, rgba(243, 244, 246, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%),
-    url('https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=1920&h=1080&fit=crop&q=80') center/cover no-repeat;
+    linear-gradient(180deg, rgba(249, 250, 251, 0.94) 0%, rgba(255, 255, 255, 0.95) 100%),
+    url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1920&q=80') center/cover no-repeat;
   background-attachment: fixed;
+  position: relative;
+}
+
+.portfolio::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 50%, rgba(249, 115, 22, 0.04) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
 }
 
 .portfolio-filters {
@@ -11,6 +24,8 @@
   gap: 15px;
   margin: 40px 0 60px;
   flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
 }
 
 .filter-btn {
@@ -42,20 +57,23 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 30px;
+  position: relative;
+  z-index: 1;
 }
 
 .portfolio-card {
   background: white;
-  border-radius: 20px;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
 }
 
 .portfolio-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 50px rgba(249, 115, 22, 0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  border-color: rgba(249, 115, 22, 0.2);
 }
 
 .portfolio-image {
@@ -124,7 +142,7 @@
 
 .portfolio-category {
   display: inline-block;
-  background: linear-gradient(135deg, rgba(249, 115, 22, 0.1) 0%, rgba(251, 146, 60, 0.1) 100%);
+  background: rgba(249, 115, 22, 0.08);
   color: var(--primary-color);
   padding: 6px 16px;
   border-radius: 20px;
