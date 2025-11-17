@@ -2,6 +2,16 @@ const express = require('express');
 const router = express.Router();
 const Contact = require('../models/Contact');
 
+// Try to load Telegram utility, but don't fail if it's not available
+let sendTelegramNotification;
+try {
+  const telegram = require('../utils/telegram');
+  sendTelegramNotification = telegram.sendTelegramNotification;
+} catch (error) {
+  console.warn('⚠️  Telegram utility not available:', error.message);
+  sendTelegramNotification = null;
+}
+
 // @route   POST /api/contact
 // @desc    Submit contact form
 // @access  Public
@@ -26,6 +36,30 @@ router.post('/', async (req, res) => {
       service,
       message
     });
+
+    // Send Telegram notification (async, don't wait for it)
+    if (sendTelegramNotification) {
+      console.log('📤 Attempting to send Telegram notification...');
+      sendTelegramNotification({
+        name,
+        email,
+        phone,
+        company,
+        service,
+        message
+      }).then(result => {
+        if (result.success) {
+          console.log('✅ Telegram notification sent successfully!');
+        } else {
+          console.log('⚠️  Telegram notification failed:', result.message);
+        }
+      }).catch(err => {
+        console.error('❌ Failed to send Telegram notification:', err.message);
+        // Don't fail the request if Telegram fails
+      });
+    } else {
+      console.log('⚠️  Telegram notification skipped (utility not loaded)');
+    }
 
     res.status(201).json({
       success: true,

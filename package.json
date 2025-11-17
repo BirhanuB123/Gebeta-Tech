@@ -12,20 +12,24 @@
     "install-all": "npm install && cd client && npm install",
     "vercel-build": "cd client && npm run build"
   },
-  "keywords": ["mern", "tech-company", "website"],
+  "keywords": [
+    "mern",
+    "tech-company",
+    "website"
+  ],
   "author": "Gebeta Tech",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.18.2",
-    "mongoose": "^7.5.0",
+    "axios": "^1.13.2",
+    "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
-    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
     "nodemailer": "^6.9.5"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1",
-    "concurrently": "^8.2.1"
+    "concurrently": "^8.2.1",
+    "nodemon": "^3.0.1"
   }
 }
-

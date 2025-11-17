@@ -7,6 +7,12 @@ const dotenv = require('dotenv');
 // Load environment variables
 dotenv.config();
 
+// Debug: Check if Telegram credentials are loaded
+console.log('🔧 Environment Check:');
+console.log('   TELEGRAM_BOT_TOKEN:', process.env.TELEGRAM_BOT_TOKEN ? '✅ Loaded' : '❌ Missing');
+console.log('   TELEGRAM_CHAT_ID:', process.env.TELEGRAM_CHAT_ID ? '✅ Loaded' : '❌ Missing');
+console.log('');
+
 const app = express();
 
 // Middleware
