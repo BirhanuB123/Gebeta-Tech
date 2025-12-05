@@ -2,8 +2,8 @@
 const axios = require('axios');
 
 // Your credentials
-const TELEGRAM_BOT_TOKEN = '8395565514:AAHggSfT2Ta3_wfCWwktKBhprIQdYWOeMB8';
-const TELEGRAM_CHAT_ID = '-1003451623104';
+const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
+const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
 
 console.log('🧪 Testing Telegram Bot Connection...\n');
 
