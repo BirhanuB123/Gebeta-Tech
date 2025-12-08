@@ -46,8 +46,8 @@ async function connectToDatabase() {
 }
 
 // Import routes
-const contactRoute = require('../backend/routes/contact');
-const newsletterRoute = require('../backend/routes/newsletter');
+const contactRoute = require('../routes/contact');
+const newsletterRoute = require('../routes/newsletter');
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {

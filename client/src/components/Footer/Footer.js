@@ -60,10 +60,10 @@ const Footer = () => {
               businesses through innovative web and mobile applications.
             </p>
             <div className="footer-social">
-              <a href="#" className="footer-social-icon"><FaFacebook /></a>
-              <a href="#" className="footer-social-icon"><FaTwitter /></a>
-              <a href="#" className="footer-social-icon"><FaLinkedin /></a>
-              <a href="#" className="footer-social-icon"><FaInstagram /></a>
+                <a href="www.facebook.com/gebetatech" className="social-icon"><FaFacebook /></a>
+                <a href="www.x.com/gebetatech" className="social-icon"><FaTwitter /></a>
+                <a href="www.linkedin.com/gebetatech" className="social-icon"><FaLinkedin /></a>
+                <a href="www.instagram.com/gebetatech" className="social-icon"><FaInstagram /></a>
             </div>
           </div>
 
@@ -98,11 +98,11 @@ const Footer = () => {
               </div>
               <div className="footer-contact-item">
                 <FaPhone />
-                <span>+251 911 234 567</span>
+                <span>+251 919 444 499</span>
               </div>
               <div className="footer-contact-item">
                 <FaEnvelope />
-                <span>info@gebeta-tech.com</span>
+                <span>info@gebetatech.com</span>
               </div>
             </div>
           </div>

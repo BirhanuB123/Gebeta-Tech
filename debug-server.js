@@ -79,4 +79,3 @@ console.log('1. Make sure your .env file has MONGODB_URI set');
 console.log('2. Install dependencies if missing: npm install');
 console.log('3. Start the server: node api/index.js');
 console.log('4. Check server logs for specific errors');
-

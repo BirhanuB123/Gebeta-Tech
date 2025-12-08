@@ -34,7 +34,6 @@ const About = () => {
   ];
 
   const achievements = [
-    'ISO 9001 Certified Quality Management',
     'Award-Winning Design Team',
     'Certified Cloud Solutions Partner',
     '24/7 Technical Support',
@@ -52,7 +51,7 @@ const About = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2>About Gebeta Tech</h2>
+          <h2>About Gebeta Technology Trading PLC</h2>
           <p>
             Your trusted technology partner in Ethiopia, delivering world-class solutions 
             that drive digital transformation and business growth.

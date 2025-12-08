@@ -107,8 +107,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4>Email</h4>
-                  <p>info@gebeta-tech.com</p>
-                  <p>support@gebeta-tech.com</p>
+                  <p>info@gebetatech.com</p>
+                  <p>support@gebetatech.com</p>
                 </div>
               </div>
 
@@ -118,8 +118,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4>Phone</h4>
-                  <p>+251 911 234 567</p>
-                  <p>+251 922 345 678</p>
+                  <p>+251 919 444 499</p>
                 </div>
               </div>
 
@@ -138,17 +137,17 @@ const Contact = () => {
             <div className="social-links">
               <h4>Follow Us</h4>
               <div className="social-icons">
-                <a href="#" className="social-icon"><FaFacebook /></a>
-                <a href="#" className="social-icon"><FaTwitter /></a>
-                <a href="#" className="social-icon"><FaLinkedin /></a>
-                <a href="#" className="social-icon"><FaInstagram /></a>
+                <a href="www.facebook.com/gebetatech" className="social-icon"><FaFacebook /></a>
+                <a href="www.x.com/gebetatech" className="social-icon"><FaTwitter /></a>
+                <a href="www.linkedin.com/gebetatech" className="social-icon"><FaLinkedin /></a>
+                <a href="www.instagram.com/gebetatech" className="social-icon"><FaInstagram /></a>
               </div>
             </div>
 
             <div className="working-hours">
               <h4>Working Hours</h4>
-              <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-              <p>Saturday: 10:00 AM - 4:00 PM</p>
+              <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+              <p>Saturday: 8:00 AM - 12:00 PM</p>
               <p>Sunday: Closed</p>
             </div>
           </motion.div>
@@ -191,13 +190,14 @@ const Contact = () => {
 
               <div className="form-row">
                 <div className="form-group">
-                  <label htmlFor="phone">Phone Number</label>
+                  <label htmlFor="phone">Phone Number *</label>
                   <input
                     type="tel"
                     id="phone"
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
+                    required
                     placeholder="+251 911 234 567"
                   />
                 </div>
