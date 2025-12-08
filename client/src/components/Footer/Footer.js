@@ -60,10 +60,10 @@ const Footer = () => {
               businesses through innovative web and mobile applications.
             </p>
             <div className="footer-social">
-                <a href="www.facebook.com/gebetatech" className="social-icon"><FaFacebook /></a>
-                <a href="www.x.com/gebetatech" className="social-icon"><FaTwitter /></a>
-                <a href="www.linkedin.com/gebetatech" className="social-icon"><FaLinkedin /></a>
-                <a href="www.instagram.com/gebetatech" className="social-icon"><FaInstagram /></a>
+                <a href="#" className="social-icon"><FaFacebook /></a>
+                <a href="#" className="social-icon"><FaTwitter /></a>
+                <a href="#" className="social-icon"><FaLinkedin /></a>
+                <a href="#" className="social-icon"><FaInstagram /></a>
             </div>
           </div>
 
