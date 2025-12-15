@@ -108,7 +108,6 @@ const Contact = () => {
                 <div>
                   <h4>Email</h4>
                   <p>info@gebetatech.com</p>
-                  <p>support@gebetatech.com</p>
                 </div>
               </div>
 
@@ -129,7 +128,7 @@ const Contact = () => {
                 <div>
                   <h4>Office</h4>
                   <p>Addis Ababa, Ethiopia</p>
-                  <p>Bole, CMC Road</p>
+                  <p>Kirkos Subcity</p>
                 </div>
               </div>
             </div>
@@ -137,10 +136,10 @@ const Contact = () => {
             <div className="social-links">
               <h4>Follow Us</h4>
               <div className="social-icons">
-                <a href="www.facebook.com/gebetatech" className="social-icon"><FaFacebook /></a>
-                <a href="www.x.com/gebetatech" className="social-icon"><FaTwitter /></a>
-                <a href="www.linkedin.com/gebetatech" className="social-icon"><FaLinkedin /></a>
-                <a href="www.instagram.com/gebetatech" className="social-icon"><FaInstagram /></a>
+                <a href="#" className="social-icon"><FaFacebook /></a>
+                <a href="#" className="social-icon"><FaTwitter /></a>
+                <a href="#" className="social-icon"><FaLinkedin /></a>
+                <a href="#" className="social-icon"><FaInstagram /></a>
               </div>
             </div>
 

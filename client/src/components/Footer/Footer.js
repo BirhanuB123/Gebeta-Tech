@@ -94,7 +94,7 @@ const Footer = () => {
             <div className="footer-contact">
               <div className="footer-contact-item">
                 <FaMapMarkerAlt />
-                <span>Addis Ababa, Ethiopia<br />Bole, CMC Road</span>
+                <span>Addis Ababa, Ethiopia<br />Kirkos Subcity</span>
               </div>
               <div className="footer-contact-item">
                 <FaPhone />
