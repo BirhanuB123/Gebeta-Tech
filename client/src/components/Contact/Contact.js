@@ -136,7 +136,7 @@ const Contact = () => {
             <div className="social-links">
               <h4>Follow Us</h4>
               <div className="social-icons">
-                <a href="#" className="social-icon"><FaFacebook /></a>
+                <a href="https://www.facebook.com/profile.php?id=61585084013377" className="social-icon"><FaFacebook /></a>
                 <a href="#" className="social-icon"><FaTwitter /></a>
                 <a href="#" className="social-icon"><FaLinkedin /></a>
                 <a href="#" className="social-icon"><FaInstagram /></a>
