@@ -25,19 +25,6 @@ mongoose.connect(MONGODB_URI, {
 .then(() => console.log('✅ MongoDB Connected Successfully'))
 .catch((err) => console.error('❌ MongoDB Connection Error:', err));
 
-// Routes
-app.use('/api/contact', require('./routes/contact'));
-app.use('/api/newsletter', require('./routes/newsletter'));
-
-// Serve static assets in production
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../client/build')));
-  
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/build/index.html'));
-  });
-}
-
 // Health check endpoint
 app.get('/api/health', (req, res) => {
   res.json({ 
@@ -46,6 +33,19 @@ app.get('/api/health', (req, res) => {
     timestamp: new Date().toISOString()
   });
 });
+
+// Routes
+app.use('/api/contact', require('./routes/contact'));
+app.use('/api/newsletter', require('./routes/newsletter'));
+
+// Serve static assets in production (Only if hosting together)
+if (process.env.NODE_ENV === 'production' && process.env.SERVE_FRONTEND === 'true') {
+  app.use(express.static(path.join(__dirname, '../client/build')));
+  
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/build/index.html'));
+  });
+}
 
 // Error handling middleware
 app.use((err, req, res, next) => {

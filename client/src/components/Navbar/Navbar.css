@@ -19,6 +19,12 @@
   border-bottom: 1px solid rgba(249, 115, 22, 0.15);
 }
 
+.navbar-container {
+  width: 95%;
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
 .navbar-content {
   display: flex;
   justify-content: space-between;

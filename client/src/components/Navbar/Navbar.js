@@ -31,7 +31,7 @@ const Navbar = () => {
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="container">
+      <div className="navbar-container">
         <div className="navbar-content">
           <div className="navbar-logo" onClick={() => scrollToSection('hero')}>
             <img src="/logo.png" alt="Gebeta Tech" className="logo-image" />
